@@ -29,7 +29,9 @@
 阶段 B  openclaw-ecommerce-product-research  →  时间窗口 / 找场景 / 真实销量 / 对标 / 净利 / IP / AI图
    │
    ▼
-阶段 C  按整合模板合成一份 8 节报告（第7节 GTM+选品验证合并成同一张行动表），落飞书文档
+阶段 C  全保真合稿：Part A(b2b全量) + Part B(选品全量) + Part C(整合层)，落飞书文档
+        ⚠️ 只增不减——两个子 skill 的每个模块/字段都保留，整合的增量只在 Part C
+        （衔接说明 + GTM/选品验证 合并行动表）
 ```
 
 ## 结构 / Structure

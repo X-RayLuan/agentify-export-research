@@ -59,11 +59,14 @@ description: >
 ### 阶段 B · 选品（调用 `openclaw-ecommerce-product-research`）
 在阶段 A 框定的品类与平台里跑选品全流程：时间窗口 → 找场景 → 真实销量阈值（Amazon/EchoTik）→ 对标 → 评论挖改进点 → 净利测算 → IP 排查 → 钩子文案 → AI 出图 → 小批量验证计划。
 
-### 阶段 C · 合稿
-按 [`references/integrated-report-template.md`](references/integrated-report-template.md) 合成**一份**整合报告（8 节）。要点：
-- 第 6 节"选品"承接阶段 B；若选品已单独成文，第 6 节给**摘要 + 详版文档链接**，不照搬全文。
-- **第 7 节"下一步行动"必须把两边的行动项合并成同一张 P1–P3 表**——例：选品的"首批 100 件 + 测试广告"和 GTM 的"ImportYeti 拉进口商名单做外联"并列。这是整合的价值所在，不能各写各的。
-- 用 lark-doc 落飞书文档进知识库（`docs +create --api-version v2`，归属 user）。AI 图用外链 `<img href=...>` 插入即可（飞书会自动 re-host 成永久素材）。
+### 阶段 C · 合稿（全保真，只增不减）
+按 [`references/integrated-report-template.md`](references/integrated-report-template.md) 合成**一份**整合报告：**Part A（b2b 全量）+ Part B（选品全量）+ Part C（整合层）**。要点：
+- 🚫 **不缩减铁律**：两个子 skill 的**每一节、每一张表、每一个字段都必须保留**，不得压成摘要。
+  - Part A 保留 b2b 的全部模块：供应商快照、竞品(海外+国内+标杆+5维打分)、ICP 三层全字段、Outbound（分层打法 + 找联系人表 + starter 账户清单 + 2周节奏 + 每层 message/proof）、Inbound（社媒 per-channel + 3 pillars + 10 angles + 3 proof assets + SEO/GEO 全套 + 30天计划）。
+  - Part B 保留选品的全部步骤：时间窗口 / 场景拆解 / 市场快照+机会窗口 / 社媒痛点 / IP / **逐品全字段**（对标/视觉卖点/微创新/净利/定价/运营/文案/验证/生图 prompt）/ 产品图。
+  - 选品若已单独成文，Part B 仍**内联完整内容**（可在末尾附详版链接），**不要只给摘要+链接**。
+- **Part C 是唯一的"压缩区"**：衔接说明（A→B 单向）+ 合并行动表（GTM 动作 + 选品验证 同一张 P1–P3 表）。这是整合的增量，不是用它替代前两部分。
+- 用 lark-doc 落飞书文档进知识库（`docs +create --api-version v2`，归属 user；长文用 create 骨架 + `update --command append` 分段灌，避免单次过长）。AI 图用外链 `<img href=...>` 插入即可（飞书会自动 re-host 成永久素材）。
 
 ## 硬性约束
 
