@@ -40,7 +40,7 @@ description: >
 ### 阶段 A · B2B 市场调研（调用 `agentify-b2b-market-research`）
 按该 skill 跑完它的全流程，产出：
 1. 供应商快照（工厂/贸易/混合、OEM-ODM、MOQ、出口线索、定位）
-2. Top 5 竞品 + **标杆/天花板品牌**（含反盲区三网：tier sweep / 需求侧反查 / 种子滚雪球）
+2. Top 5 竞品**两套（海外目的地市场 + 中国国内 1688/阿里源头同行）** + **标杆/天花板品牌**（含反盲区三网：tier sweep / 需求侧反查 / 种子滚雪球）
 3. ICP 分层（T1/T2/T3，买家角色/触发/痛点/proof/异议/成交形态）
 4. Outbound（渠道/话术/CTA + **怎么找联系人**：海关数据 ImportYeti、LinkedIn、Vendor 门户、展会）
 5. Inbound（社媒主阵地 per-channel play + 独立站 SEO/GEO）
