@@ -66,7 +66,9 @@ description: >
   - Part B 保留选品的全部步骤：时间窗口 / 场景拆解 / 市场快照+机会窗口 / 社媒痛点 / IP / **逐品全字段**（对标/视觉卖点/微创新/净利/定价/运营/文案/验证/生图 prompt）/ 产品图。
   - 选品若已单独成文，Part B 仍**内联完整内容**（可在末尾附详版链接），**不要只给摘要+链接**。
 - **Part C 是唯一的"压缩区"**：衔接说明（A→B 单向）+ 合并行动表（GTM 动作 + 选品验证 同一张 P1–P3 表）。这是整合的增量，不是用它替代前两部分。
-- 🖼 **每模块配可视化图**：A1–A5 / B1–B6 / C1–C2 每个模块标题下配一张 **gpt-image-2 概念可视化图**（信息图/示意图，少字防拼错；数据由表格承载）。用 `KIE_API_KEY`（来自 `openclaw-ecommerce-product-research/.env`，**密钥严禁写进仓库或报告**），配方见该 skill `references/data-sources.md §5`，生成后肉眼校验文字。
+- 🖼 **每模块配可视化图（图随文走，真实数据进图）**：
+  - **数据型模块图 = 手写 SVG → 飞书画板**（`<whiteboard type="svg">…</whiteboard>`，`docs +update block_insert_after` 插到模块标题下）。文字精确、可编辑、不需上传权限——把该模块真实内容画进去，**禁做无字示意图**。插前可 browse 渲染 SVG 截图自检排版。
+  - **gpt-image-2 只画产品 hero 图**（它画不准中文/数字），密钥 `KIE_API_KEY` 走 env/keychain **严禁入库**，配方见 openclaw skill `references/data-sources.md §5`，生成后肉眼校验文字。
 - 用 lark-doc 落飞书文档进知识库（`docs +create --api-version v2`，归属 user；长文用 create 骨架 + `update --command append` 分段灌，避免单次过长）。AI 图用外链 `<img href=...>` 插入即可（飞书会自动 re-host 成永久素材）。
   > ⚠️ lark `append`（锚点 -1）偶发 `Block ID transform failed`；遇到改用 `block_insert_after` + 显式末块 id（`docs +fetch --detail with-ids` 取）。
 

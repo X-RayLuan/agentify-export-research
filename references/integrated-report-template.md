@@ -2,7 +2,10 @@
 
 > **全保真原则**：整合 = `agentify-b2b-market-research` 全量（Part A）+ `openclaw-ecommerce-product-research` 全量（Part B）+ 整合层（Part C）。**不缩减任何子 skill 的模块或字段，只增不减**。两个子模板的每一节、每一张表、每一个字段都要保留；整合的增量在 Part C（衔接 + 合并行动表），不是把前两部分压成摘要。
 > 来源只标原始源（Amazon / TikTok / Google Trends / Reddit / 1688 / 阿里国际站 / USPTO / ImportYeti）。**不出现上游数据厂商名。** 缺数据写"待数据确认 / Not publicly verified"。
-> 🖼 **每模块配可视化图**：A1–A5 / B1–B6 / C1–C2 每个模块标题下配**一张 gpt-image-2 生成的概念可视化图**（信息图/示意图风格，少字或无字防拼写错；数据仍由文中表格承载）。出图用 `KIE_API_KEY`（来自 openclaw-ecommerce-product-research 的 `.env`，**密钥不写进任何仓库/报告**），配方见该 skill `references/data-sources.md §5`；生成后肉眼校验任何文字。
+> 🖼 **每模块配可视化图（图随文走）**：A1–A5 / B1–B6 / C1–C2 每个模块标题下配一张**承载该模块真实数据/文案**的可视化图。
+> - **数据型模块图 = 手写 SVG → 飞书画板**（`<whiteboard type="svg">…</whiteboard>` 经 `docs +update block_insert_after`）。文字精确（中文/数字清晰）、可编辑、**不需上传权限**。把该模块的真实内容（竞品名单、ICP三层、阈值数字、行动项…）画进图里，不要做"无字示意图"。
+> - **gpt-image-2 只用于产品 hero 图**（如推荐主攻品实拍风），因为它**画不准文字**（中文/数字必糊），仅适合视觉氛围图；用 `KIE_API_KEY`（来自 openclaw skill `.env`，**密钥不入库**），配方见 `references/data-sources.md §5`，生成后肉眼校验文字。
+> - 自检：SVG 插入前可用 browse 渲染 `file://…svg` 截图肉眼核对排版不溢出。
 
 # 📋 {{工厂名}}出海市场调研报告（整合版）
 
